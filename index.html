@@ -3,64 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Passport Application Form</title>
-</head> 
+    <title>Skincare Haven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-    <table style="height: 100vh; width: 100%;">
-        <tr>
-            <td align="center" valign="middle">
-                <form action="/submit_passport" method="post">
-                    <h2>Passport Application Form</h2>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="links">
+            <a href="#">HOME</a>
+            <a href="#">PRODUCTS</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">BLOG</a>
+            <a href="#">CONTACT</a>
+        </div>
+        <div class="contact-info">
+            <span>+00 (123) 456 7890</span> | <span>support@skincarehaven.com</span>
+        </div>
+    </div>
 
-                    <label for="first-name">First Name:</label><br>
-                    <input type="text" id="first-name" name="first_name" required><br><br>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="yourcompany.webp" alt="Skincare Haven Logo">
+        </div>
+        <nav class="nav">
+            <!-- Home Dropdown -->
+            <div class="dropdown">
+                <button class="dropbtn">Home</button>
+                <div class="dropdown-content">
+                    <a href="#">Overview</a>
+                    <a href="#">Our Story</a>
+                    <a href="#">Our Team</a>
+                </div>
+            </div>
+            
+            <!-- Products Dropdown -->
+            <div class="dropdown">
+                <button class="dropbtn">Products</button>
+                <div class="dropdown-content">
+                    <a href="#">Serums</a>
+                    <a href="#">Cleansers</a>
+                    <a href="#">Moisturizers</a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-                    <label for="last-name">Last Name:</label><br>
-                    <input type="text" id="last-name" name="last_name" required><br><br>
+    <!-- Main Content -->
+    <main>
+        <!-- Features Section -->
+        <section class="features">
+            <div class="feature-box">
+                <h3>HYDRATING FACIAL SERUM</h3>
+                <ul>
+                    <li>Deeply hydrates and revitalizes skin</li>
+                    <li>Improves elasticity and smooths fine lines</li>
+                    <li>Contains natural antioxidants</li>
+                    <li>Suitable for both oily and dry skin types</li>
+                    <li>Be hydrated</li>
+                </ul>
+                <a href="#" class="btn">READ MORE &raquo;</a>
+            </div>
+            <div class="feature-box">
+                <h3>GENTLE CLEANSING FOAM WITH BEST RESULTS</h3>
+                <ul>
+                    <li>Effectively removes dirt and makeup</li>
+                    <li>Balances skin's natural oils</li>
+                    <li>Enriched with soothing botanicals</li>
+                    <li>Dermatologist tested</li>
+                </ul>
+                <a href="#" class="btn">READ MORE &raquo;</a>
+            </div>
+            <div class="feature-box">
+                <h3>NOURISHING NIGHT CREAM</h3>
+                <ul>
+                    <li>Boosts skin’s overnight repair process</li>
+                    <li>Infused with vitamins and minerals</li>
+                    <li>Reduces signs of aging</li>
+                    <li>Hydrates and firms skin while you sleep</li>
+                    <li>Leaves skin soft and rejuvenated</li>
+                </ul>
+                <a href="#" class="btn">READ MORE &raquo;</a>
+            </div>
+        </section>
 
-                    <label for="dob">Date of Birth:</label><br>
-                    <input type="date" id="dob" name="dob" required><br><br>
+        <!-- Content Section -->
+        <section class="content-section">
+            <div class="content-left">
+                <h2>SKINCARE TIPS & ADVICE</h2>
+                <div class="highlight-box">
+                    <h3>IMPORTANCE OF SUNSCREEN</h3>
+                    <p>Discover why wearing sunscreen every day is essential for maintaining healthy, youthful skin...</p>
+                    <a href="#" class="btn">READ MORE &raquo;</a>
+                </div>
+            </div>
+            <div class="content-right">
+                <h2>NEW ARRIVALS & REVIEWS</h2>
+                <div class="content-list">
+                    <div class="content-item">
+                        <h4>THE BEST VITAMIN C SERUMS</h4>
+                        <span>By Skincare Expert | Monday, 5 May 2045</span>
+                        <p>Explore the top-rated Vitamin C serums that can brighten your skin and reduce dark spots...</p>
+                        <a href="#" class="btn">READ MORE &raquo;</a>
+                    </div>
+                    <div class="content-item">
+                        <h4>TOP MOISTURIZERS FOR DRY SKIN</h4>
+                        <span>By Dermatologist | Thursday, 15 April 2045</span>
+                        <p>Find the best moisturizers to keep your skin hydrated all day long, even in dry climates...</p>
+                        <a href="#" class="btn">READ MORE &raquo;</a>
+                    </div>
+                    <div class="content-item">
+                        <h4>ANTI-AGING SKINCARE ROUTINE</h4>
+                        <span>By Beauty Blogger | Friday, 20 March 2045</span>
+                        <p>Learn how to build an effective anti-aging skincare routine that works for your skin type...</p>
+                        <a href="#" class="btn">READ MORE &raquo;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                    <label for="gender">Gender:</label><br>
-                    <input type="radio" id="male" name="gender" value="male" required>
-                    <label for="male">Male</label><br>
-                    <input type="radio" id="female" name="gender" value="female" required>
-                    <label for="female">Female</label><br>
-                    <input type="radio" id="other" name="gender" value="other" required>
-                    <label for="other">Other</label><br><br>
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <div class="cta-box">
+                <h3>EXCLUSIVE OFFERS ON SKINCARE PRODUCTS</h3>
+                <a href="#" class="btn">SHOP NOW &raquo;</a>
+            </div>
+            <div class="cta-box">
+                <h3>JOIN OUR SKINCARE COMMUNITY</h3>
+                <a href="#" class="btn">SIGN UP &raquo;</a>
+            </div>
+        </section>
+    </main>
 
-                    <label for="address">Address:</label><br>
-                    <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
-
-                    <label for="phone">Phone Number:</label><br>
-                    <input type="tel" id="phone" name="phone" required><br><br>
-
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" required><br><br>
-
-                    <label for="nationality">Nationality:</label><br>
-                    <input type="text" id="nationality" name="nationality" required><br><br>
-
-                    <label for="id-proof">ID Proof:</label><br>
-                    <input type="text" id="id-proof" name="id_proof" placeholder="e.g., Aadhar Card, Driving License" required><br><br>
-
-                    <label for="passport-type">Passport Type:</label><br>
-                    <select id="passport-type" name="passport_type" required>
-                        <option value="ordinary">Ordinary</option>
-                        <option value="diplomatic">Diplomatic</option>
-                        <option value="official">Official</option>
-                    </select><br><br>
-
-                    <label for="photo">Upload Passport Size Photo:</label><br>
-                    <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
-
-                    <label for="sign">Upload Signature:</label><br>
-                    <input type="file" id="sign" name="sign" accept="image/*" required><br><br>
-
-                    <input type="submit" value="Submit Application">
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-column">
+                <h4>ABOUT SKINCARE HAVEN</h4>
+                <p>We offer a wide range of skincare products tailored to meet the needs of every skin type. Our mission is to help you achieve healthy, glowing skin through quality products and expert advice.</p>
+                <address>
+                    <p>123 Beauty Lane, Wellness City, 56789</p>
+                    <p>+00 (123) 456 7890</p>
+                    <p>support@skincarehaven.com</p>
+                </address>
+            </div>
+            <div class="footer-column">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>STAY CONNECTED</h4>
+                <form>
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">SUBSCRIBE</button>
                 </form>
-            </td>
-        </tr>
-    </table>
+                <div class="social-media">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Pinterest</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2045 - All Rights Reserved - Skincare Haven</p>
+        </div>
+    </footer>
 </body>
 </html>
