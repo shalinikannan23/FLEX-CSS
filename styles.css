@@ -3,21 +3,22 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #FFFFFF; /* White for better contrast with dark background */
     line-height: 1.6;
+    background-color: #030007; /* Dominant dark purple background */
 }
 
 a {
-    color: #8568a5; /* Primary purple color */
+    color: #D1C4E9; /* Lighter purple for better visibility */
     text-decoration: none;
 }
 
 a:hover {
-    color: #7b6292; /* Darker purple for hover */
+    color: #B39DDB; /* Slightly darker purple for hover */
 }
 
 .btn {
-    background-color: #8568a5; /* Primary purple color */
+    background-color: #8a73a8; /* Lighter purple color */
     color: #fff;
     padding: 10px 15px;
     display: inline-block;
@@ -27,68 +28,71 @@ a:hover {
 }
 
 .btn:hover {
-    background-color: #7b6292; /* Darker purple for hover */
+    background-color: #736187; /* Slightly darker purple for hover */
 }
 
 .top-bar {
-    background-color: #f6f4f8;
-    color: #9324be;
+    background-color: #120013;
+    color: #FFFFFF; /* White text for better contrast */
     display: flex;
-    font-size: 14.4px; /* Converted from 0.9rem */
+    font-size: 0.9rem;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
 }
 
 .links a {
     padding: 10px;
     margin-right: 10px;
-    text-decoration: none;
-    color: #9324be;
+    color: #FFFFFF; /* White text for better contrast */
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #D3B9E1;
-    border-bottom: 1px solid #e0e0e0;
+    background-color: #20002b; /* Darker shade for header */
+    padding: 20px;
+    border-bottom: 1px solid #300038;
+}
+
+.header-text {
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.header-text h2 span {
+    color: #D1C4E9; /* Change the color of the span text */
+    font-weight: bold; /* Make the span text bold */
 }
 
 .header .logo img {
-    max-width: 50%;
+    max-width: 300px;
 }
 
 .nav {
     display: flex;
     align-items: center;
-    padding-right: 80px;
 }
 
 .nav a {
     margin: 0 15px;
-    font-size: 17.6px; /* Converted from 1.1rem */
-    color: #8568a5; /* Primary purple color */
+    font-size: 1.1rem;
+    color: #D1C4E9; /* Lighter purple for better visibility */
     font-weight: bold;
-    padding: 14px 16px;
+    padding: 10px 15px;
 }
 
 .nav a:hover {
-    color: #7b6292; /* Darker purple for hover */
+    color: #B39DDB; /* Slightly darker purple for hover */
 }
 
 .dropdown {
-    display: inline;
-    padding-right: 40px;
-    align-items: center;
-}
-
-.dropbtn {
-    padding-right: 20px;
-    text-decoration: none;
-    color: #2d2d2d;
-    font-size: 18px;
-    justify-content: space-between;
-    font-weight: 700;
+    position: relative;
 }
 
 .dropdown-content {
@@ -98,10 +102,11 @@ a:hover {
     min-width: 160px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     z-index: 1;
+    border-radius: 4px;
 }
 
 .dropdown-content a {
-    color: #8568a5; /* Primary purple color */
+    color: #8a73a8; /* Lighter purple color */
     padding: 12px 16px;
     display: block;
     text-decoration: none;
@@ -109,8 +114,8 @@ a:hover {
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
-    color: #7b6292; /* Darker purple for hover */
+    background-color: #20002b;
+    color: #B39DDB; /* Slightly darker purple for hover */
 }
 
 .dropdown:hover .dropdown-content {
@@ -120,33 +125,34 @@ a:hover {
 /* Main Content */
 main {
     padding: 30px;
-    background-color: #D3B9E1;
+    background-color: #20002b; /* Darker background for content */
 }
 
 .features {
     display: flex;
+    flex-wrap: wrap; /* Added for mobile responsiveness */
     justify-content: space-between;
     margin-bottom: 30px;
-    background-color: #D3B9E1;
 }
 
 .feature-box {
-    background-image: url('flexbg1.jpg');
-    background-size: cover; 
-    background-position: center; 
+    background-image: url('facecream.jpg');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     padding: 20px;
     flex: 1;
-    margin: 0 10px;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    border: 1px solid #300038;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     text-align: center;
+    transition: transform 0.3s ease; /* Hover effect transition */
 }
 
 .feature-box h3 {
-    font-size: 19.2px; /* Converted from 1.2rem */
+    font-size: 1.2rem;
     margin-bottom: 15px;
-    color: #9b289b;
+    color: #E1BEE7; /* Light purple for better visibility */
 }
 
 .feature-box ul {
@@ -157,39 +163,62 @@ main {
 
 .feature-box ul li {
     margin-bottom: 10px;
-    color: #9a2b9a;
+    color: #D1C4E9; /* Lighter purple for better visibility */
     font-weight: 700;
+}
+
+/* Hover effect for feature boxes */
+.feature-box:hover {
+    transform: scale(1.05); /* Scale up on hover */
 }
 
 /* Content Section */
 .content-section {
     display: flex;
+    flex-wrap: wrap; /* Added for mobile responsiveness */
     justify-content: space-between;
     margin-bottom: 30px;
 }
 
 .content-left, .content-right {
     flex: 1;
-    margin: 0 10px;
+    margin: 10px;
+}
+
+.highlight-box {
+    background-color: #2D283E; /* Darker purple for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center; /* Center content horizontally */
+}
+
+.highlight-image {
+    width: 100%; /* Make the image full width of the container */
+    height: 80%; /* Maintain the aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    margin-bottom: 15px; /* Space between the image and the heading */
 }
 
 .content-left h2, .content-right h2 {
-    font-size: 24px; /* Converted from 1.5rem */
+    font-size: 1.5rem;
     margin-bottom: 20px;
-    color: #7b6292;
+    color: #D1C4E9; /* Lighter purple for better visibility */
 }
 
 .highlight-box {
     background-color: #333;
-    color: #fff;
+    color: #FFFFFF; /* White for better contrast */
     padding: 20px;
     margin-bottom: 20px;
     text-align: center;
+    border-radius: 4px;
 }
 
 .highlight-box h3 {
-    font-size: 19.2px; /* Converted from 1.2rem */
+    font-size: 1.2rem;
     margin-bottom: 15px;
+    color: #FFFFFF; /* White for better contrast */
 }
 
 .content-list {
@@ -199,58 +228,60 @@ main {
 }
 
 .content-item {
-    background-color: #fff;
+    background-color: #2D283E; /* Darker purple for better contrast */
     padding: 15px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #4A437D; /* Lighter purple border */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .content-item h4 {
-    font-size: 16px; /* Converted from 1rem */
+    font-size: 1rem;
     margin-bottom: 10px;
-    color: #333;
+    color: #D1C4E9; /* Lighter purple for better visibility */
 }
 
 .content-item span {
     display: block;
     margin-bottom: 10px;
-    font-size: 12.8px; /* Converted from 0.8rem */
-    color: #999;
+    font-size: 0.8rem;
+    color: #B39DDB; /* Slightly darker purple */
 }
 
 .cta-section {
     display: flex;
+    flex-wrap: wrap; /* Added for mobile responsiveness */
     justify-content: space-between;
-    background-color: #f4f4f4;
+    background-color: #4A437D; /* Lighter purple background */
     padding: 30px 0;
 }
 
 .cta-box {
-    background-color: #fff;
+    background-color: #2D283E; /* Darker purple for better contrast */
     padding: 20px;
     flex: 1;
-    margin: 0 10px;
+    margin: 10px;
     text-align: center;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #4A437D; /* Lighter purple border */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .cta-box h3 {
-    font-size: 19.2px; /* Converted from 1.2rem */
+    font-size: 1.2rem;
     margin-bottom: 15px;
-    color: #333;
+    color: #FFFFFF; /* White for better contrast */
 }
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #120013;
+    color: #FFFFFF; /* White for better contrast */
     padding: 20px 0;
-    font-size: 14.4px; /* Converted from 0.9rem */
+    font-size: 0.9rem;
 }
 
 .footer-top {
     display: flex;
+    flex-wrap: wrap; /* Added for mobile responsiveness */
     justify-content: space-between;
     padding-bottom: 20px;
     border-bottom: 1px solid #444;
@@ -259,17 +290,18 @@ footer {
 
 .footer-column {
     flex: 1;
+    margin: 10px;
     padding: 0 15px;
 }
 
 .footer-column h4 {
-    font-size: 17.6px; /* Converted from 1.1rem */
+    font-size: 1.1rem;
     margin-bottom: 15px;
-    color: #fff;
+    color: #FFFFFF; /* White for better contrast */
 }
 
 .footer-column p, .footer-column address, .footer-column ul {
-    color: #ccc;
+    color: #CCCCCC; /* Lighter grey for better visibility */
     margin-bottom: 10px;
 }
 
@@ -283,24 +315,34 @@ footer {
 }
 
 .footer-column ul li a {
-    color: #8568a5; /* Primary purple color */
+    color: #D1C4E9; /* Lighter purple for better visibility */
 }
 
 .footer-column ul li a:hover {
-    color: #7b6292; /* Darker purple for hover */
+    color: #B39DDB; /* Slightly darker purple for hover */
 }
 
 .social-media a {
     display: inline-block;
     margin-right: 10px;
-    color: #8568a5; /* Primary purple color */
+    color: #D1C4E9; /* Lighter purple for better visibility */
 }
 
 .social-media a:hover {
-    color: #7b6292; /* Darker purple for hover */
+    color: #B39DDB; /* Slightly darker purple for hover */
 }
 
 .footer-bottom {
     text-align: center;
     padding-top: 10px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+   
 }
